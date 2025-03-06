@@ -419,6 +419,7 @@ services:
   api:
     image: langgenius/dify-api:1.0.0
     restart: always
+    privileged: true
     environment:
       # Use the shared environment variables.
       <<: *shared-api-worker-env
